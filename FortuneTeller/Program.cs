@@ -9,7 +9,7 @@ namespace FortuneTeller
     class Program
     {
         static void Main(string[] args)
-        { 
+        {
             //Oh look, a customer! Greet them!
             Console.WriteLine("Welcome to your personal fortune teller! \nPlease make yourself comfortable.");
 
@@ -25,15 +25,7 @@ namespace FortuneTeller
             //Horoscope time!
             Console.WriteLine("How old are you, dear?");
             int age = int.Parse(Console.ReadLine());
-
-            if (age >= 29)
-            {
-                Console.WriteLine("What? No, you don't look a day over 25!");
-            }
-            else
-            {
-                Console.WriteLine("I knew it!");
-            }
+            Console.WriteLine("I knew it!");
 
             Console.WriteLine("So, in which month were you born? Give me a number between 1 and 12.");
             int month = int.Parse(Console.ReadLine());
@@ -48,18 +40,54 @@ namespace FortuneTeller
             {
                 Console.WriteLine("You can choose either red, orange, yellow, green, blue, indigo, or violet.");
                 color = Console.ReadLine();
-
             }
             else
             {
                 Console.WriteLine("Thank you.");
             }
 
-            ////Family
-            //Console.WriteLine("Finally, how many siblings do you have?");
-            //int siblings = int.Parse(Console.ReadLine());
+
+            if (color == "red")
+            {
+                color = "Motorized Wheelchair";
+            }
+            else if (color == "orange")
+            {
+                color = "Arabian Stallion";
+            }
+            else if (color == "yellow")
+            {
+                color = "Ice Cream Truck";
+            }
+            else if (color == "green")
+            {
+                color = "Skateboard";
+            }
+            else if (color == "blue")
+            {
+                color = "Yacht";
+            }
+            else if (color == "indigo")
+            {
+                color = "Hover Car";
+            }
+            else if (color == "violet")
+            {
+                color = "Tesla Model S";
+            }
+            else
+                color = "pair of roller skates";
+
+            //Family
+            Console.WriteLine("And finally, how many siblings do you have?");
+            int siblings = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Here is your fortune:");
+            Console.WriteLine(firstName + " " + surname + " will retire in " + age + " years with " +   );
             
+
+
 
         }
     }
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
