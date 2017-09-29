@@ -35,10 +35,29 @@ namespace FortuneTeller
                 Console.WriteLine("I knew it!");
             }
 
-            Console.WriteLine("So, what month would that be? Give me a number between 1 and 12.");
+            Console.WriteLine("So, in which month were you born? Give me a number between 1 and 12.");
             int month = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Perfect!");
+            Console.WriteLine("Perfect! What a lovely time of year.");
+
+            //Colors
+            Console.WriteLine("Almost done. What is your favorite color? Type \"help\" to list your options.");
+            string color = Console.ReadLine();
+
+            if (color == "help")
+            {
+                Console.WriteLine("You can choose either red, orange, yellow, green, blue, indigo, or violet.");
+                color = Console.ReadLine();
+
+            }
+            else
+            {
+                Console.WriteLine("Thank you.");
+            }
+
+            ////Family
+            //Console.WriteLine("Finally, how many siblings do you have?");
+            //int siblings = int.Parse(Console.ReadLine());
             
 
         }
